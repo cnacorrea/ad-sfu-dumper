@@ -23,7 +23,7 @@ except ldap.LDAPError, e:
     print e
 
 # dominio base
-baseDN = "DC=unimedrj,DC=com,DC=br"
+baseDN = "DC=DOMINIO,DC=LOCAL"
 searchScope = ldap.SCOPE_SUBTREE
 
 # atributos de interesse
