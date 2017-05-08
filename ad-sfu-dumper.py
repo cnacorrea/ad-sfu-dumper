@@ -88,4 +88,4 @@ for usuario in result_set:
 	
 	senha_atual = spwd.getspnam(usuario['login'])
 	if usuario['senha'] != spwd.getspnam(usuario['login']).sp_pwd:
-		os.system("usermod -p " + usuario['senha'] + " " + usuario['login'])
+		os.system("usermod -p '" + usuario['senha'] + "' " + usuario['login'])
